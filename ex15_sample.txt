@@ -1,0 +1,4 @@
+This is stuff I typed into the file ex15_sample.txt.
+It is really cool stuff.
+Fuck! Lots and lots of fun in programming.
+Get to do it, boy!

@@ -1,0 +1,9 @@
+Why there is a syntaxerror in ex16_sample.txt
+
+Oh, I forget to type in the script name.
+
+wrong:
+python ex16_sample.txt ex17_sample.txt
+
+right:
+python ex17.py ex16_sample.txt ex17_sample.txt
