@@ -1,0 +1,12 @@
+ex37
+keywords
+
+from
+examples: from x import Y
+(the "x" may be "X", as "Y"?)
+
+operators
+
+;    description: semi_colon
+(semi_colon -> Semi_colon?)
+
