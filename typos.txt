@@ -10,3 +10,19 @@ operators
 ;    description: semi_colon
 (semi_colon -> Semi_colon?)
 
+ex41
+A Reading Test
+line 11 of the code
+(the space before the last ":" may be deleted?)
+
+ex42
+The last sentence of the first part
+There you have it: Mary is kind of Salmon that is a kind of Fish. object is a class is a class.
+(What is this "object is a class is a class."?)
+
+ex44
+class TheBridge(Scene):
+    def enter(self):
+        print "You burst onto the Bridge with the netron destruct bomb"
+(the netron may be neutron)
+
