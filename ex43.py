@@ -97,7 +97,7 @@ class LaserWeaponArmory(Scene):
         print "and you need the code to get the bomb out. If you get code wrong"
         print "10 times then the lock closes forever and you can't get the bomb."
         print "The code is 3 digits."
-        code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
+        code = "%d%d%d" % (randint(1, 9), randint(1, 9), randint(1, 9))
         guess = raw_input("[keypad]> ")
         guesses = 0
 
@@ -123,8 +123,8 @@ class TheBridge(Scene):
 
     def enter(self):
         print "You burst onto the Bridge with the neutron destruct bomb"
-    	print "under your arm and surprise 5 Gothons who are trying to"
-    	print "taken control of the ship. Each of them has an een uglier"
+        print "under your arm and surprise 5 Gothons who are trying to"
+        print "taken control of the ship. Each of them has an een uglier"
         print "clown costume than the last. They haven't pulled their weapons"
         print "out yet, as they see active bomb under your arm and"
         print "don't want to set it off."
@@ -193,7 +193,7 @@ class Finished(Scene):
         print "You won! Good job."
         return 'finished'
 
-            
+
 class Map(object):
 
     scenes = {
@@ -214,7 +214,6 @@ class Map(object):
 
     def opening_scene(self):
         return self.next_scene(self.start_scene)
-
 
 
 a_map = Map('central_corridor')

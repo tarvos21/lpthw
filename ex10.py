@@ -16,5 +16,5 @@ print fat_cat
 print "\a"
 
 while True:
-    for i in ["/","-","|","\\","|"]:
+    for i in ["/", "-", "|", "\\", "|"]:
         print "%s\r" % i,

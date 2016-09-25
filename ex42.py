@@ -2,6 +2,7 @@
 class Animal(object):
     pass
 
+
 ## class Dog is-a Animal and has-a __init__ function that takes self, name parameters
 class Dog(Animal):
 
@@ -9,12 +10,14 @@ class Dog(Animal):
         ## class Dog has-a attribute named name and set to name
         self.name = name
 
+
 ## class Cat is-a Animal
 class Cat(Animal):
 
     def __init__(self, name):
         ## class Cat has-a attribute named name and set to name
         self.name = name
+
 
 ## class Person is-a object
 class Person(object):
@@ -26,6 +29,7 @@ class Person(object):
         ## Person has-a pet of some kind
         self.pet = None
 
+
 ## class Employee is-a Person
 class Employee(Person):
 
@@ -35,13 +39,16 @@ class Employee(Person):
         ## class Employee has-a attribute named salary and set to salary
         self.salary = salary
 
+
 ## class Fish is-a object
 class Fish(object):
     pass
 
+
 ## class Salmon is-a Fish
 class Salmon(Fish):
     pass
+
 
 ## class Halibut is-a Fish
 class Halibut(Fish):

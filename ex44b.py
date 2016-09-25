@@ -12,7 +12,7 @@ class Child(Parent):
         print "This is override funciton in Child class."
         print "The override function in Child class is stronger,"
         print "killing the Parent override function."
-        
+
 
 dad = Parent()
 son = Child()

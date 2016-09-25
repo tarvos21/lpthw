@@ -9,15 +9,18 @@ class Parent(object):
     def altered(self):
         print "PARENT altered() function is here!"
 
+
 class Child(Parent):
 
     def override(self):
         print "This is CHILD override() function, great!"
 
     def altered(self):
-        print "This is CHILD altered() function, before PARENT altered() called by super."
+        print "This is CHILD altered() function, \
+                before PARENT altered() called by super."
         super(Child, self).altered()
-        print "This is CHILD altered() function, after PARENT altered() called by super."
+        print "This is CHILD altered() function, \
+                after PARENT altered() called by super."
 
 
 dad = Parent()

@@ -19,6 +19,6 @@ a18 = '1 == 1 and (not ("testing" == 1 or 1 == 0))'
 a19 = '"chunky" == "bacon" and (not (3 == 4 or 3 == 3))'
 a20 = '3 == 3 and (not ("testing" == "testing" or "Python" == "Fun"))'
 
-for i in range(1,21):
+for i in range(1, 21):
     name = eval("a" + str(i))
     print name + ":", eval(name)

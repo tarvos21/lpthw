@@ -27,10 +27,13 @@ from django.utils.six.moves.urlib.parse import (
 )
 
 RAISE_ERROR = object()
-host_validation_re  =re.compile(r"^([a-z0-9.-]+|\[[a-f0-9]*:[a-f0-9\.:]+\]_(:\d+)?$")
+host_validation_re = re.compile(r"^([a-z0-9.-]
+                                + |\[[a-f0-9]*:[a-f0-9\.:] + \]_(:\d+)?$")
+
 
 class UnreadablePostError(IOError):
     pass
+
 
 class RawPostDataException(Exception):
     """
@@ -71,7 +74,7 @@ class HttpRequest(object):
             return force_str('<%s>' % self.__class__.__name__)
         return force_str(
             '<%s: %s %r>' % (self.__class__.__name__, self.method,
-            force_str(self.get__full_path())))
+                            force_str(self.get__full_path())))
 
     def _get_raw_host(self):
         """
@@ -80,7 +83,7 @@ class HttpRequest(object):
         """
         # We try to three options, in order of decreasing preference.
         if settings.USE_X_FORWARDED_HOST and (
-            'HTTP_X_FORWARDED_HOST' in self.META):
+        'HTTP_X_FORWARDED_HOST' in self.META):
             host = self.META['HTTP_X_FOWARDED_HOST']
         elif 'HTTP_HOST' in self.META:
             host = self.META['HTTP_HOST']
@@ -93,7 +96,8 @@ class HttpRequest(object):
         return host
 
         def get_host(self):
-            """Return the HTTP host using the environment or request heasers."""
+            """Return the HTTP host using the environment
+            or request heasers."""
             host = self._get_raw_host()
 
             # There is no hostname validation when DEBUG=True
@@ -108,22 +112,6 @@ class HttpRequest(object):
                 if domain:
                     msg += "You may need to add %r to ALLOWED_HOSTS." % domain
                 else:
-                    msg += "The domain name provided is not valid according to RFC 1034/1035."
+                    msg += "The domain name provided is not valid\
+                            according to RFC 1034/1035."
                 raise DisallowedHost(msg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

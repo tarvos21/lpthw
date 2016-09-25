@@ -1,7 +1,7 @@
 my_name = 'Du Bing'
-my_age = 27 # not a lie
-my_height = 183 # centimeters
-my_weight = 90 # kilograms
+my_age = 27    # not a lie
+my_height = 183    # centimeters
+my_weight = 90    # kilograms
 my_eyes = 'Black'
 my_teeth = 'White'
 my_hair = 'Black'
